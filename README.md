@@ -1,32 +1,45 @@
-## Objectif général
+#### LAB 4 - Manipulation Dynamique des Fragments avec FragmentManager et FragmentTransaction
 
-Apprendre à :
 
-Créer et utiliser des fragments dynamiques dans une activité.
+# 🎯 Objectif général
 
-Naviguer entre plusieurs fragments avec FragmentManager.
+## Ce que ce projet permet d’apprendre
 
-Gérer les événements et états dans les fragments (clics, SeekBar, etc.).
+- Créer et utiliser des **fragments dynamiques** dans une activité.
+- Naviguer entre plusieurs fragments avec le **FragmentManager**.
+- Gérer les **événements** et l’état de la vue dans un fragment (bouton, SeekBar…).
+- Comprendre et appliquer le **cycle de vie d’un fragment**.
 
-Comprendre le cycle de vie d’un fragment.
+# 👀 Vérification visuelle
 
-## Vérification visuelle
-### Écrans et descriptions
+## Fragment 1
+- Affiche le texte : **"Fragment One"**
+- Contient un bouton
+- Après un clic, le texte devient : **"Bonjour depuis Fragment 1 !"**
 
-| Écran      | Description                                                                              |
-| ---------- | ---------------------------------------------------------------------------------------- |
-| Fragment 1 | Texte "Fragment One" + bouton. Après clic -> texte devient "Bonjour depuis Fragment 1 !" |
-| Fragment 2 | SeekBar. En la déplaçant -> texte mis à jour : "Valeur : n"                              |
+## Fragment 2
+- Contient une **SeekBar**
+- Lorsque l’utilisateur la déplace, le texte affiche : **"Valeur : n"**
 
-## Résumé des notions apprises
+# 📘 Notions essentielles
 
-| Concept               | Explication                                                        |
-| --------------------- | ------------------------------------------------------------------ |
-| Fragment              | Partie réutilisable d’une interface, avec son propre cycle de vie. |
-| FragmentManager       | Contrôle l'ajout, le remplacement ou la suppression de fragments.  |
-| FragmentTransaction   | Représente une action sur les fragments (add, replace, remove).    |
-| addToBackStack()      | Permet de revenir au fragment précédent via le bouton Back.        |
-| onSaveInstanceState() | Sauvegarde l'état avant destruction temporaire (rotation).         |
-| onViewCreated()       | Idéal pour initialiser les composants de la vue.                   |
+## Fragment
+Un composant réutilisable représentant une partie d’interface, possédant son propre cycle de vie.
 
-## DEMO 
+## FragmentManager
+Permet de gérer l’ajout, la suppression et le remplacement de fragments dans une activité.
+
+## FragmentTransaction
+Représente l’ensemble des opérations effectuées sur les fragments (add, replace, remove…).
+
+## addToBackStack()
+Enregistre l’opération dans la pile afin de permettre le retour au fragment précédent via le bouton *Back*.
+
+## onSaveInstanceState()
+Permet de sauvegarder l’état du fragment avant une destruction temporaire (rotation de l’écran, minimisation…).
+
+## onViewCreated()
+Méthode utilisée pour initialiser les composants graphiques après la création de la vue.
+
+# 🎥 DEMO
+
